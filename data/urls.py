@@ -9,6 +9,9 @@ urlpatterns = [
  path('vm/', views.visimisi, name='visimisi'),
  path('developer/', views.developer, name='developer'),
 
+# Prestasi
+ path('kab/', views.kab, name='kabupaten'),
+
 #  Performa
  path('classmeating/', views.classmeating, name='classmeating'),
  path('studytour/', views.studytour, name='studytour'),

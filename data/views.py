@@ -16,6 +16,12 @@ def developer(request):
 
 
 
+# Prestasi
+def kab(request):
+ return render(request,'view/prestasi/kab.html')
+
+
+
 # performa
 def classmeating(request):
  return render(request,'view/performa/classmeating.html')
