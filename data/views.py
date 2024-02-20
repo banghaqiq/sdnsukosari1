@@ -17,8 +17,8 @@ def developer(request):
 def struktur(request):
  return render(request,'view/about/struktur.html')
 
-def datasiswa(request):
- return render(request,'view/about/datasiswa.html')
+def dataguru(request):
+ return render(request,'view/about/dataguru.html')
 
 
 

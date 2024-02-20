@@ -9,7 +9,7 @@ urlpatterns = [
  path('vm/', views.visimisi, name='visimisi'),
  path('developer/', views.developer, name='developer'),
  path('struktur/', views.struktur, name='struktur'),
- path('datasiswa/', views.datasiswa, name='datasiswa'),
+ path('dataguru/', views.dataguru, name='dataguru'),
 
 # Prestasi
  path('kec/', views.kec, name='kecamatan'),
@@ -31,7 +31,7 @@ urlpatterns = [
  path('extra/', views.extrakulikuler, name='extra'),
 
 
-#  path('testimonial/', views.alumni, name='testimonial'),
+ path('testimonial/', views.alumni, name='testimonial'),
  path('contact/', views.contact, name='contact'),
 
 ]

@@ -19,9 +19,9 @@
            <a href="#" class="nav-link dropdown-toggle {% if menu == 'about' %} active {% endif %}" data-bs-toggle="dropdown">Tentang</a>
            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
              <a href="{% url 'profile' %}" class="dropdown-item">Profil</a>
-             <a href="{% url 'visimisi' %}" class="dropdown-item">Visi Misi</a>
+             <a href="{% url 'visimisi' %}" class="dropdown-item">Visi Misi | Sejarah</a>
              <a href="{% url 'struktur' %}" class="dropdown-item">Struktur</a>
-             <a href="{% url 'datasiswa' %}" class="dropdown-item">Data Siswa</a>
+             <a href="{% url 'dataguru' %}" class="dropdown-item">Data Guru | Tendik</a>
              <a href="{% url 'developer' %}" class="dropdown-item">Developer</a>
             </div>
           </div>
@@ -54,7 +54,7 @@
           </div>
           {% comment %} <a href="{% url 'performance' %}" class="nav-item nav-link {% if menu == 'performance' %} active {% endif %}">Performance</a> {% endcomment %}
           {% comment %} <a href="" class="nav-item nav-link {% if menu == '' %} active {% endif %}">Prestasi</a> {% endcomment %}
-         {% comment %} <a href="{% url 'testimonial' %}" class="nav-item nav-link {% if menu == 'testimonial' %} active {% endif %}">Alumni</a> {% endcomment %}
+         <a href="{% url 'testimonial' %}" class="nav-item nav-link {% if menu == 'testimonial' %} active {% endif %}">Alumni</a>
          <a href="{% url 'contact' %}" class="nav-item nav-link {% if menu == 'contact' %} active {% endif %}">Contact</a>
        </div>
      </div>
