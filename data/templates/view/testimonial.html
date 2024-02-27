@@ -19,31 +19,16 @@
       class="owl-carousel testimonial-carousel wow fadeInUp"
       data-wow-delay="0.1s"
     >
-      <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-        <img class="mb-4" src="{% static 'sd/img/testimonial-1.jpg' %}" alt="" />
-        <p class="mb-4">Sekolah Yang Begitu Menyenangkan Pada Masa Awal Belajar Pelajaran Umum</p>
-        <h5>Bang__Haqiq</h5>
-        <span class="text-primary">SMK Nurul Jadid Paiton Probolinggo</span>
-      </div>
-      <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-        <img class="mb-4" src="{% static 'sd/img/testimonial-2.jpg' %}" alt="" />
-        <p class="mb-4">Sekolah Yang Telah membentuk Karakter Umum Saya</p>
-        <h5>Rival Yudhi Setiawan</h5>
-        <span class="text-primary">SMK Nurul Jadid Paiton Probolinggo</span>
-      </div>
-      <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-        <img class="mb-4" src="{% static 'sd/img/testimonial-3.jpg' %}" alt="" />
-        <p class="mb-4">Tetap Semangat dan terus berkembang</p>
-        <h5>Nazriel Aulia Rachman</h5>
-        <span class="text-primary">SMK Nurul Jadid Paiton Probolinggo</span>
-      </div>
-      <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-        <img class="mb-4" src="{% static 'sd/img/testimonial-4.jpg' %}" alt="" />
-        <p class="mb-4">Tidak hanya Belajar ilmu umum Namun Mempelajari Ilmu
-          Agama yang mudah dimengerti</p>
-        <h5>Adesta Prayoga</h5>
-        <span class="text-primary">SMA Nurul Jadid Paiton Probolinggo</span>
-      </div>
+    
+    {% for alumnilk in data_alumnilk %}
+    <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+      <img class="mb-4" src="{{ alumnilk.image.url }}" alt="" />
+      <p class="mb-4">{{ alumnilk.deskripsi }}</p>
+      <h5>{{ alumnilk.nama }}</h5>
+      <span class="text-primary">{{ alumnilk.sekolah }}</span>
+    </div>
+    {% endfor %}
+      
     </div>
   </div>
  </div> 

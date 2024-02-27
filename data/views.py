@@ -22,7 +22,11 @@ def struktur(request):
 def dataguru(request):
  data_guru = DataGuru.objects.all()
 
- return render(request,'view/about/dataguru.html' ,{'data_guru': data_guru})
+ context={
+  'data_guru': data_guru
+ }
+
+ return render(request,'view/about/dataguru.html' ,context)
 
 
 
@@ -61,7 +65,13 @@ def studytour(request):
 
 # alumni
 def alumni(request):
- return render(request,'view/testimonial.html')
+ data_alumnilk = AlumniLK.objects.all()
+ data_alumnipr = AlumniPR.objects.all()
+ context={
+  'data_alumnilk':data_alumnilk,
+  'data_alumnipr':data_alumnipr,
+ }
+ return render(request,'view/testimonial.html',context)
 
 # informasi
 def berita(request):
