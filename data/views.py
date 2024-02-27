@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import *
+from .forms import *
 
 # Create your views here.
 def beranda(request):
@@ -18,7 +20,9 @@ def struktur(request):
  return render(request,'view/about/struktur.html')
 
 def dataguru(request):
- return render(request,'view/about/dataguru.html')
+ data_guru = DataGuru.objects.all()
+
+ return render(request,'view/about/dataguru.html' ,{'data_guru': data_guru})
 
 
 
